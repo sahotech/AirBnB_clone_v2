@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-The Test for storage
+Test for storage
 """
 from datetime import datetime
 import unittest
@@ -10,14 +10,14 @@ from models.engine.file_storage import FileStorage
 
 
 class test_fileStorage(unittest.TestCase):
-    """This Test FileStorage Class"""
+    """Test FileStorage Class"""
     def test_instances(self):
         """chequeamos instantation"""
         obj = FileStorage()
         self.assertIsInstance(obj, FileStorage)
 
     def test_docs(self):
-        """This Test docstrings"""
+        """Test docstrings"""
         self.assertIsNotNone(FileStorage.all)
         self.assertIsNotNone(FileStorage.new)
         self.assertIsNotNone(FileStorage.save)
