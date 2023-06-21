@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This Starts a Flask web application.
+"""Starts a Flask web application.
 The application listens on 0.0.0.0, port 5000.
 Routes:
     /: Displays 'Hello HBNB!'.
@@ -17,13 +17,13 @@ app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 def hello_hbnb():
-    """This Displays 'Hello HBNB!'"""
+    """Displays 'Hello HBNB!'"""
     return "Hello HBNB!"
 
 
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
-    """This Displays 'HBNB'"""
+    """Displays 'HBNB'"""
     return "HBNB"
 
 
